@@ -17,6 +17,10 @@ fn main() {
     println!("{float}");
     print_function(tuple);
     println!("{tuple:?}");
+
+    let test_string = String::from("String"); //Our complex datatype
+    print_function(&test_string); //Our complex data type going into print
+    println!("{test_string}"); //Still valid!
 }
 
 fn another_function() {
